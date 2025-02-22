@@ -12,10 +12,7 @@ variable "tenant_id"{
   type=string
 }
 
-variable "admin_username" {
-  type        = string
-  description = "Nom d'utilisateur administrateur de la VM"
-}
+
 
 variable "admin_password" {
   type        = string
