@@ -9,7 +9,7 @@ module "linuxservers" {
   source         = "Azure/compute/azurerm"
   resource_group_name = var.resource_group_name
   version        = "~> 3.0.0"
-  
+   location       = var.location
   vm_os_simple   = "UbuntuServer"
   public_ip_dns  = ["linsimplevmips"]
   vnet_subnet_id = module.vnet.vnet_subnets[0]
