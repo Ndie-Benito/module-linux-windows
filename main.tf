@@ -1,3 +1,7 @@
+locals {
+  resource_group_name = "terraform-vm"
+  location            = "West US 2"
+}
 module "vnet" {
   source              = "Azure/network/azurerm"
   version             = "~> 3.0.0"
