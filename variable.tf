@@ -16,12 +16,6 @@ variable "tenant_id"{
 
 variable "admin_password" {
   type        = string
-  description = "Mot de passe administrateur de la VM"
-  sensitive   = true
-}
-
-variable "admin_password" {
-  type        = string
   description = "Mot de passe administrateur de la VM Windows"
   sensitive   = true
 }
