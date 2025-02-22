@@ -14,8 +14,8 @@ locals {
   }
 
   windows_servers = {
-    hostname     = "mywinvm"
-    admin_pass   = "ComplxP@ssw0rd!"
+    hostname     = "benito-vm"
+    admin_pass   = var.admin_password
     os_simple    = "WindowsServer"
     public_ip    = ["winsimplevmips"]
   }
